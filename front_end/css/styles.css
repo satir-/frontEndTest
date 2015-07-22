@@ -1,0 +1,478 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Additional */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: #b0e0e6;
+}
+
+.inline { 
+    float:left; 
+    position: relative; 
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearBoth { clear:both; }
+
+.text {
+    font-size: 11px;
+    color: #A7ACAF;
+}
+
+/* Navigation and search */
+#nav {
+    box-sizing: border-box;
+    height: 156px;
+    padding-top: 40px;
+}
+
+div.row {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    div.row:first-child {
+        margin-bottom: 30px;
+    }
+    
+/* First row - sorting */
+div.questions-sort {
+    width: 800px;
+    margin: 0px 200px;
+    text-align: justify;
+}
+    div.questions-sort ul {
+        text-align: justify;
+        line-height: 0;
+        font-size: 1px;
+    }
+    
+    div.questions-sort:after {
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        content: '';
+        display: inline-block;
+    }
+    
+    div.questions-sort ul li {
+        display: inline-block;
+        line-height: normal;
+        font-size: 14px;
+    }
+        /* Sum is not a 100% - blocks do not fit otherwise in IE and Mozilla */
+        div.questions-sort ul li.first {
+            width: 22%;
+        }
+        
+        div.questions-sort ul li.second {
+            width: 23%;
+        }
+        
+        div.questions-sort ul li.third {
+            width: 13%;
+        }   
+        
+        div.questions-sort ul li.fourth {
+            width: 13%;
+        }          
+        
+        div.questions-sort ul li.fifth {
+            width: 28%;
+        }        
+        
+    div.questions-sort p {
+        text-align: right;
+    }
+/* Content */ 
+/* Back button (placed outside row)*/
+div.btn-back button{
+    position: absolute;
+    
+    border: 1px solid #C5C6C8;
+    background: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    color: #C5C6C8;
+    font-size: 30px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 5px;
+}
+    div.btn-back button:hover {
+       border-color: #A7A9AC;
+       background: #A7A9AC;
+       color: #ccc;
+       cursor: pointer;
+    }
+
+    div.btn-back button:active {
+       border-color: #2C2D2D;
+       background: #313232;
+    }
+    
+    div.btn-back button:focus {
+        outline: 0;
+    }
+   
+/* Plus button */
+li.btn-plus button {
+    border: 0px;
+    background: #fff;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    
+    color: #0266B3;
+    font-size: 28px;
+}
+    li.btn-plus button:hover {
+       color: #3585C2;
+       cursor: pointer;
+    }
+
+    li.btn-plus button:active {
+        color: #02528F;
+    }
+    
+    li.btn-plus button:focus {
+        outline: 0;
+    }
+    
+/* Radio buttons (my shelf, all) */
+div.questions-sort input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"][name="show"] + label span {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    
+    -webkit-border-radius: 50%;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+    
+    position: relative;
+    border: 1px solid #2D2C2E;
+    background-color: #fff;
+}
+
+input[type="radio"][name="show"]:checked + label span:before {    
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    
+    content: "\2022";
+    color: #2D2C2E;
+    text-align: center;
+    font-size: 225%;
+    line-height: 14px;
+}
+
+/* Sorting text-toggle (hidden radio-button) */
+.fifth label{
+    cursor: pointer;
+}
+
+.fifth label input[type="radio"] + span {
+    color: #0266B3;
+    text-decoration: none;
+}
+
+.fifth label input[type="radio"]:checked + span {
+    color: #A7ACAF;
+    text-decoration: underline;
+}
+
+/* Second row - search */
+div.search {
+    width: 800px;
+    margin: 0px 200px;
+}
+
+    div.search ul {
+        text-align: justify;
+        line-height: 0;
+        font-size: 1px;
+    }
+
+    div.search ul:after {
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        content: '';
+        display: inline-block;
+    }
+
+    div.search ul li {
+        display: inline-block;
+        text-align: center;
+        line-height: normal;
+        font-size: 14px;   
+    }
+    
+    /* Content */
+    /* Search input */
+    div.search #searchInput {
+        box-sizing: border-box;
+        width: 600px;
+        height: 35px;
+        border: 1px solid #EEEEEE;
+        background: #FBFBFB;
+    }
+    
+        div.search #searchInput::-webkit-input-placeholder {
+            padding-left: 17px;
+        }    
+        
+        div.search #searchInput::-moz-input-placeholder {
+            padding-left: 17px;
+        }
+        
+        div.search #searchInput:-moz-input-placeholder {
+            padding-left: 17px;
+        }
+        
+        div.search #searchInput::-ms-input-placeholder {
+            padding-left: 17px;
+        }
+        
+    /* Search button */
+    div.search button {
+        width: 180px;
+        height: 35px;
+        border: 1px solid #A7A9AC;
+        background: #FFF;
+        color: #A7ACAF;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+    
+        div.search button:hover {
+           border-color: #58595A;
+           background: #626364;
+           color: #ccc;
+           cursor: pointer;
+        }
+
+        div.search button:active {
+           border-color: #2C2D2D;
+           background: #313232;
+        }
+        
+        div.search button:focus {
+           outline: 0;
+        }
+
+/*Main*/
+#main {
+    background-color: #FFE1AD;
+    padding-bottom: 60px;
+}
+
+div.wrapper {
+    margin: 0px;
+    width:  1200px;
+    background-color: #FBFBFB;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.question {
+    margin: 0px 200px 1px;
+    box-shadow: 2px 2px 5px #E5E5E5;
+    width: 800px;
+    background-color: #FFF;
+}
+
+div.more-questions {
+    margin: 1px 200px 0px;
+    box-shadow: 2px 2px 5px #E5E5E5;
+    width: 800px;
+    height: 90px;
+    background-color: #FFF;
+}
+
+div.question-main {
+    height: 280px;
+    width: 75%;
+    margin-bottom: 40px;
+    background-color: #DFF3FD;
+}
+
+div.stats {
+    height: 320px;
+    width: 25%;  
+}
+
+/* Question title and author */
+div.qstn-title {
+    height: 33%;
+}
+
+/* Offset block - "asked" */
+div.asked {
+    height: 67%;
+    width: 15%;
+    text-align: center;
+}
+
+/* Comment block */
+div.comments-main {
+    height: 67%;
+    width: 85%;
+    background-color: #FFF;
+}
+
+div.comments-main ul {
+    text-align: justify;
+    line-height: 0;
+    font-size: 1px;
+    height: 100%;
+}
+
+    div.comments-main ul:after {
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        content: '';
+        display: inline-block;
+    }
+
+    div.comments-main ul li {
+        /* Fix for IE and Mozilla - blocks don't fit at 20% */
+        width: 19.5%;
+        height: 100%;
+        display: inline-block;   
+        /* Fix to prevent sliding down */
+        vertical-align: top;
+        box-sizing: border-box;
+        padding: 7% 0 0 2%;
+        float: left;
+    }
+    
+/* Content */
+div.qstn-text {
+    margin: 20px;   
+}
+
+div.qstn-text b {
+    margin-right: 10px;    
+}
+
+div.qstn-text b, div.qstn-text i {
+    color: #0266BB;
+}
+
+div.comment {
+    background-color: #EEEEEE;
+    height: 100%;
+    width: 100%;
+    line-height: normal;
+    font-size: 14px;    
+    text-align: center;
+    /* For circle element positioning */
+    position: relative;
+} 
+
+div.more-activities {
+    height: 100%;
+    width: 100%;
+    line-height: normal;
+    font-size: 14px; 
+    text-align: center;
+    /* For circle element positioning */
+    position: relative;
+}
+
+div.question-main .img-rounded {
+    margin: 20px;
+}
+
+div.more-activities div, div.more-activities span {
+    color: #4E4B51;
+}
+
+div.more-activities span {
+    display: inline-block;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+
+div.comments-main hr, div.asked hr {
+    width: 80%;
+    margin: 7% auto;
+    height: 1px;
+    background: #A7ACAF;
+    font-size: 0;
+    border: 0;
+}
+
+div.comments-main hr.answ {
+    background: #2D2C2E;
+}
+
+div.comment-label {
+    position: absolute;
+    bottom: 0;
+    width: 96%;
+    margin: 0 2% 10px;    
+}
+
+div.comments-main .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #A7A9AC;
+    margin: 0px 0px -5px -5px;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+}
+
+div.comments-main .circle.answ {
+    background: #2D2C2E;
+}
+
+div.stats div {
+    background-color: #FFF;
+    padding: 110px 0px 0px 20%;
+    line-height: 55px;
+    color: #4E4B51;
+    font-size: 14px;
+}
+
+div.stats div span{
+    margin-right: 5px;
+}
+
+div.more-questions a{
+    line-height: 90px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #E9523F;
+}
+
+

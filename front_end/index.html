@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- HEAD -->
+<head>
+	<title>Test</title>
+    
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="robots" content="index,follow" />
+    
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontello.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontello-codes.css" />
+</head>
+<!-- BODY -->
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
+    <!-- NAV -->
+    <div id="nav">
+        <!-- FIRST ROW -->
+        <div class="row">
+            <div class="inline btn-back">
+                <button class="inline" type="submit"><i class="icon-left-open-big"></i></button>
+            </div>
+            <div class="inline questions-sort">
+                <ul>
+                    <li class="first"><h1>QUESTIONS</h1></li>
+                    <li class="second btn-plus"><button type="submit"><i class="icon-plus-circle"></i></button></li>
+                    <li class="third">
+                        <input type="radio" id="my_shelf" name="show" checked/>
+                        <label for="my_shelf"><span></span>My shelf</label>   
+                    </li>
+                    <li class="fourth">
+                        <input type="radio" id="all_qstns" name="show" />
+                        <label for="all_qstns"><span></span>All questions</label>
+                    </li>
+                    <li class="fifth">
+                        <p><i>Sort by:</i> 
+                            <label>
+                                <input type="radio" id="recent" name="sort" checked>
+                                <span>recent</span>
+                            </label>
+                            <i>or</i>
+                            <label>
+                                <input type="radio" id="hot" name="sort">
+                                <span>hot</span>
+                            </label>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearBoth"></div>
+        </div>
+        <!-- SECOND ROW -->
+        <div class="row">
+            <div class="inline search">
+                <form>
+                    <ul>
+                        <li><input type="search" id="searchInput" placeholder="Search questions"></li>
+                        <li><button type="submit">SEARCH</button></li>
+                    </ul>
+                </form>
+            </div>
+            <div class="clearBoth"></div>
+        </div>
+    </div>
+    <!-- MAIN -->
+    <div id="main">
+        <div class="wrapper">
+        
+            <!-- Full question block -->
+            <div class="question">
+                <!-- Question -->
+                <div class="question-main inline">
+                    <!-- Title -->
+                    <div class="qstn-title">
+                        <img class="img-rounded inline" src="res/avatar_2.png">
+                        <div class="qstn-text inline">
+                            <p><b>Eva</b><span class="text">IS ASKING:</span></p>
+                            <h3><i>Will insulin make my patient gain weight?</i></h3>
+                        </div>
+                        <br class="clearBoth" />
+                    </div>
+                    <!-- Comments and answers -->
+                    <div class="asked inline">
+                        <div class="comment-label">
+                            <hr/>
+                            <div class="text">ASKED</div>
+                        </div>
+                    </div>
+                    <div class="comments-main inline">
+                        <ul>
+                            <li><div class="more-activities">
+                                <span><b>3</b></span>
+                                <div class="comment-label">
+                                    <b><i><p>more</p><p>activities</p></i></b>
+                                </div>
+                                <div class="circle"></div>
+                            </div></li>
+                            <li><div class="comment">
+                                <img class="img-rounded" src="res/avatar_1.png">
+                                <div  class="comment-label">
+                                    <hr/>
+                                    <div class="text">COMMENTED</div>
+                                </div>
+                                <div class="circle"></div>
+                            </div></li>
+                            <li><div class="comment">
+                                <img class="img-rounded" src="res/avatar_3.png">
+                                <div  class="comment-label">
+                                    <hr/>
+                                    <div class="text">COMMENTED</div>
+                                </div>
+                                <div class="circle"></div>
+                            </div></li>
+                            <li><div class="comment">
+                                <img class="img-rounded" src="res/avatar_4.png">
+                                <div  class="comment-label">
+                                    <hr/>
+                                    <div class="text">COMMENTED</div>
+                                </div>
+                                <div class="circle"></div>
+                            </div></li>
+                            <li><div class="comment">
+                                <img class="img-rounded" src="res/avatar_5.png">
+                                <div  class="comment-label">
+                                    <hr class="answ"/>
+                                    <div class="text">ANSWERED</div>
+                                </div>
+                                <div class="circle answ"></div>
+                            </div></li>
+                        </ul>
+                    </div>
+                    <br class="clearBoth" />
+                </div>
+                <!-- Side statistic -->
+                <div class="stats inline">
+                    <div>
+                        <p><b><span>1</span><i>related discussion</i></b></p>
+                        <p><b><span>6</span><i>peers involved</i></b></p>
+                        <p><b><span>3</span><i>conversations</i></b></p>
+                    </div>
+                </div>
+                <br class="clearBoth" />
+            </div>
+            
+            <!-- Full question block -->
+            <div class="question">
+                <!-- Question -->
+                <div class="question-main inline">
+                    <!-- Title -->
+                    <div class="qstn-title">
+                        <img class="img-rounded inline" src="res/avatar_6.png">
+                        <div class="qstn-text inline">
+                            <p><b>Andrew</b><span class="text">IS ASKING:</span></p>
+                            <h3><i>Vegan diet in diabets treatment?</i></h3>
+                        </div>
+                        <br class="clearBoth" />
+                    </div>
+                    <!-- Comments and answers -->
+                    <div class="asked inline">
+                        <div class="comment-label">
+                            <hr/>
+                            <div class="text">ASKED</div>
+                        </div>
+                    </div>
+                    <div class="comments-main inline">
+                        <ul>
+                            <li><div class="more-activities">
+                                <span><b>6</b></span>
+                                <div class="comment-label">
+                                    <b><i><p>more</p><p>activities</p></i></b>
+                                </div>
+                                <div class="circle"></div>
+                            </div></li>
+                            <li><div class="comment">
+                                <img class="img-rounded" src="res/avatar_4.png">
+                                <div  class="comment-label">
+                                    <hr/>
+                                    <div class="text">COMMENTED</div>
+                                </div>
+                                <div class="circle"></div>
+                            </div></li>
+                            <li><div class="comment">
+                                <img class="img-rounded" src="res/avatar_5.png">
+                                <div  class="comment-label">
+                                    <hr/>
+                                    <div class="text">COMMENTED</div>
+                                </div>
+                                <div class="circle"></div>
+                            </div></li>
+                            <li><div class="comment">
+                                <img class="img-rounded" src="res/avatar_7.png">
+                                <div  class="comment-label">
+                                    <hr/>
+                                    <div class="text">COMMENTED</div>
+                                </div>
+                                <div class="circle"></div>
+                            </div></li>
+                            <li><div class="comment">
+                                <img class="img-rounded" src="res/avatar_3.png">
+                                <div  class="comment-label">
+                                    <hr class="answ"/>
+                                    <div class="text">ANSWERED</div>
+                                </div>
+                                <div class="circle answ"></div>
+                            </div></li>
+                        </ul>
+                    </div>
+                    <br class="clearBoth" />
+                </div>
+                <!-- Side statistic -->
+                <div class="stats inline">
+                    <div>
+                        <p><b><span>2</span><i>related discussion</i></b></p>
+                        <p><b><span>9</span><i>peers involved</i></b></p>
+                        <p><b><span>5</span><i>conversations</i></b></p>
+                    </div>
+                </div>
+                <br class="clearBoth" />
+            </div>
+
+            <!-- Full question block -->
+            <div class="question">
+                <!-- Question -->
+                <div class="question-main inline">
+                    <!-- Title -->
+                    <div class="qstn-title">
+                        <img class="img-rounded inline" src="res/avatar_5.png">
+                        <div class="qstn-text inline">
+                            <p><b>Joseph</b><span class="text">IS ASKING:</span></p>
+                            <h3><i>Vegan diet to stop diabet progress</i></h3>
+                        </div>
+                        <br class="clearBoth" />
+                    </div>
+                    <!-- Comments and answers -->
+                    <div class="asked inline">
+                        <div class="comment-label">
+                            <hr/>
+                            <div class="text">ASKED</div>
+                        </div>
+                    </div>
+                    <div class="comments-main inline">
+                        <ul>
+<!--                             <li><div class="more-activities">
+                                <span><b>3</b></span>
+                                <div class="comment-label">
+                                    <b><i><p>more</p><p>activities</p></i></b>
+                                </div>
+                                <div class="circle"></div>
+                            </div></li> -->
+                            <li><div class="comment">
+                                <img class="img-rounded" src="res/avatar_7.png">
+                                <div  class="comment-label">
+                                    <hr/>
+                                    <div class="text">COMMENTED</div>
+                                </div>
+                                <div class="circle"></div>
+                            </div></li>
+                            <li><div class="comment">
+                                <img class="img-rounded" src="res/avatar_3.png">
+                                <div  class="comment-label">
+                                    <hr/>
+                                    <div class="text">COMMENTED</div>
+                                </div>
+                                <div class="circle"></div>
+                            </div></li>
+                            <li><div class="comment">
+                                <img class="img-rounded" src="res/avatar_2.png">
+                                <div  class="comment-label">
+                                    <hr/>
+                                    <div class="text">COMMENTED</div>
+                                </div>
+                                <div class="circle"></div>
+                            </div></li>
+<!--                             <li><div class="comment">
+                                <img class="img-rounded" src="res/avatar_5.png">
+                                <div  class="comment-label">
+                                    <hr class="answ"/>
+                                    <div class="text">ANSWERED</div>
+                                </div>
+                                <div class="circle answ"></div>
+                            </div></li> -->
+                        </ul>
+                    </div>
+                    <br class="clearBoth" />
+                </div>
+                <!-- Side statistic -->
+                <div class="stats inline">
+                    <div>
+                        <p><b><span>5</span><i>related discussion</i></b></p>
+                        <p><b><span>4</span><i>peers involved</i></b></p>
+                        <p><b><span>0</span><i>conversations</i></b></p>
+                    </div>
+                </div>
+                <br class="clearBoth" />
+            </div>
+           
+           
+            <div class="more-questions ">
+                <a href=""><b>load more questions</b></a>
+            </div>
+        </div> 
+    </div>
+    <!-- FOOTER -->
+    <div id="footer"></div>
+</body>
+</html>

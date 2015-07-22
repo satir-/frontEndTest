@@ -1,0 +1,10 @@
+
+.icon-left-open-big:before { 
+    content: '\e800'; 
+    margin: 0px;
+    
+    } /* '' */
+.icon-plus-circle:before { 
+    content: '\e801'; 
+    margin: 0px;
+} /* '' */
