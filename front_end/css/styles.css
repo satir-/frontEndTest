@@ -343,7 +343,7 @@ div.comments-main {
 }
 
 div.comments-main ul {
-    text-align: justify;
+    /* text-align: justify; */
     line-height: 0;
     font-size: 1px;
     height: 100%;
@@ -360,13 +360,14 @@ div.comments-main ul {
 
     div.comments-main ul li {
         /* Fix for IE and Mozilla - blocks don't fit at 20% */
-        width: 19.5%;
+        width: 19.9%;
         height: 100%;
         display: inline-block;   
         /* Fix to prevent sliding down */
         vertical-align: top;
         box-sizing: border-box;
         padding: 7% 0 0 2%;
+        /* Actually works without floating */
         float: left;
     }
     
